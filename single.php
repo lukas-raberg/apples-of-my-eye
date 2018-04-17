@@ -16,20 +16,14 @@
 			<div class="selected-title-thin-less"></div>
 			
 			<div class="meta-single">
-				<div class="meta-micro meta-micro-pad">
+				<div class="meta-micro">
 					<strong>Text:</strong> <?php the_author(); ?>
 				</div>
-				<div class="meta-micro meta-micro-pad">
+				<div class="meta-micro">
 					<strong>Foto:</strong> <?php echo get_post_meta($post->ID, 'Fotograf:', true); ?>
 				</div>
-				<div class="meta-micro meta-micro-pad">
-					<strong>Publicerat: </strong><?php the_date(); ?>
-				</div>
-				<div class="meta-micro meta-micro-pad">
-					<strong>I kategorin:</strong> <?php the_category(', '); ?>
-				</div>
 				<div class="meta-micro">
-					<strong>Taggat med:</strong><span class="tags"><?php the_tags( ' ', '', ''); ?></span>
+					<strong>Publicerat: </strong><?php the_date(); ?>
 				</div>
 			</div>
 			
@@ -43,7 +37,17 @@
 			</div>
 			
 			<div class="comments">
-				<span class="tags BYT">
+				<div class="meta-micro-pad">
+					<strong>More:</strong> <span class="tags"><?php the_category(', '); ?></span>
+				</div>
+				
+				<div class="meta-micro-pad">
+					<strong>Taggar:</strong><span class="tags"><?php the_tags( ' ', '', ''); ?></span>
+				</div>
+			</div>
+			
+			<div class="comments">
+				<span class="tags">
 					<h3 class="comment-reply-title">Dela med dig:</h3>
 					<?php echo do_shortcode("[Sassy_Social_Share]"); ?>
 				</span>
