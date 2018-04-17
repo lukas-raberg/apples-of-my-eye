@@ -12,6 +12,7 @@
 		<li><a href="/cocktails/">Cocktails</a></li>
 		<li><a href="/food/">Food</a></li>
 		<li><a href="/getaways/">Getaways</a></li>
+		<li><a href="../../#blogs">Blogs</a></li>
 		<li><a href="../../#map">Map</a></li>
 	</ul>
 </div>
