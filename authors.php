@@ -1,8 +1,6 @@
 <div class="authors-wrapper">
-
-
-	<h5 class="blog-name">Blogs</h5>
-
+	
+<h5 class="blog-name">Blogs</h5>
 
 <div class="author-col first">
 	<div class="author-header"> 
