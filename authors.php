@@ -1,5 +1,9 @@
 <div class="authors-wrapper">
 
+
+	<h5 class="blog-name">Blogs</h5>
+
+
 <div class="author-col first">
 	<div class="author-header"> 
 		<div class="avatar-box"><img class="avatar" src="./static/hanna.jpg" alt="Glad Hanna i blå skjorta, i bakgrund en gråblå vägg."></div>
