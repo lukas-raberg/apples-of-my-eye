@@ -99,5 +99,3 @@
 	<?php else: ?>
 	<?php endif; ?>
 </div>
-
-<div class="clearboth" id="blogs"></div>

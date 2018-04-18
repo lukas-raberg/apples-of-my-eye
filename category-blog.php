@@ -7,7 +7,7 @@
  ?>
 
 	<div class="blog-wrapper">
-		
+	
 		<h5 class="blog-name"><?php the_category('display_name'); ?></h5>
 	<?php query_posts( array(
 	 'post_type' => array( 'blog' ),
@@ -16,7 +16,6 @@
 	 'orderby' => 'desc')
 	); ?>
 	
-
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<a class="category-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 			<div class="blog-list">
@@ -33,14 +32,14 @@
 							<span class="category-excerpt">
 								<?php the_excerpt(); ?>
 							</span>
-							<div class="selected-title-thin"></div>
+							<div class="selected-title-thin"></div>		</a> 
 						<span class="category-author">
 							 <?php the_author(); ?>
 						</span>
 					</div>	
 				</article>
 			</div>
-		</a>
+
 	<?php endwhile; ?>
 	<?php else: ?>
 	<?php endif; ?>

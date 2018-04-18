@@ -1,4 +1,4 @@
-<div class="authors-wrapper">
+<div class="authors-wrapper" id="blogs">
 	
 <h5 class="blog-name">Blogs</h5>
 

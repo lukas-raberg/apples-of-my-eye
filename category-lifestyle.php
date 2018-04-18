@@ -6,7 +6,7 @@
 		<?php query_posts('cat=6'); ?>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<a class="category-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<div class="category-list">	
+			<div class="category-list">
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="category-img">
 						<?php the_post_thumbnail('large'); ?>
