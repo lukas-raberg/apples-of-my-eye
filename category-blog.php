@@ -18,30 +18,28 @@
 	
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-		<div class="blog-list">
-
-			<a class="category-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="category-img">
-					<?php the_post_thumbnail('large'); ?>
-				</div>			
-				<div class="category-text">
-						<div class="selected-title-thin"></div>
-						<h3 class="category-title">
-							<?php the_title(); ?>
-						</h3>
+		<a class="category-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<div class="blog-list">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<div class="category-img">
+						<?php the_post_thumbnail('large'); ?>
+					</div>			
+					<div class="category-text">
+							<div class="selected-title-thin"></div>
+							<h3 class="category-title">
+								<?php the_title(); ?>
+							</h3>
 						
-						<span class="category-excerpt">
-							<?php the_excerpt(); ?>
+							<span class="category-excerpt">
+								<?php the_excerpt(); ?>
+							</span>
+							<div class="selected-title-thin"></div>
+						<span class="category-author">
+							 <?php the_author(); ?>
 						</span>
-						<div class="selected-title-thin"></div>
-					<span class="category-author">
-						 <?php the_author(); ?>
-					</span>
-				</div>	
-			</article>
-		</div>
+					</div>	
+				</article>
+			</div>
 		</a>
 	<?php endwhile; ?>
 	<?php else: ?>
