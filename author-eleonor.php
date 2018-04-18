@@ -27,6 +27,9 @@
 					<?php the_post_thumbnail('large'); ?>
 				</div>			
 				<div class="category-text">
+						<h2 class="featured-category">
+							<?php the_date(); ?>
+						</h2>
 						<div class="selected-title-thin"></div>
 						<h3 class="category-title">
 							<?php the_title(); ?>

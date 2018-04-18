@@ -17,16 +17,16 @@
 			 'orderby' => 'desc')
 			); ?>
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
+	<a class="category-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 		<div class="blog-list">
-
-			<a class="category-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="category-img">
 					<?php the_post_thumbnail('large'); ?>
 				</div>			
 				<div class="category-text">
+						<h2 class="featured-category">
+							<?php the_date(); ?>
+						</h2>
 						<div class="selected-title-thin"></div>
 						<h3 class="category-title">
 							<?php the_title(); ?>
@@ -41,8 +41,8 @@
 					</span>
 				</div>	
 			</article>
-		</a>
-	</div>
+		</div>
+	</a>
 	<?php endwhile; ?>
 	<?php else: ?>
 	<?php endif; ?>
