@@ -1,0 +1,125 @@
+/*
+	Theme Name: Apples of My Eye
+	Theme URI: http://applesofmyeye.com
+	Description: 
+	Version: 1.0
+	Author: Lukas Råberg
+	Author URI: 
+	Tags: Blank, HTML5, CSS3
+
+	License:
+	License URI: 
+*/
+/* nav */
+
+.stick {
+	height:4em;
+	width:100%;
+    position:fixed;
+	top:0;
+	background:#F7F5F5;
+	display:block;
+	z-index:1001;
+}
+
+.nav-logo {
+	height:3.5em;
+	display:block;
+	float:left;
+}
+
+	@media only screen and (min-width:540px) {
+		.nav-logo {
+
+		}
+	}
+	
+.socials-header {
+	float:left;
+	display:none;
+
+}
+
+@media only screen and (min-width:540px) {
+	.socials-header{
+		float:left;
+		display:block;
+	}
+}
+
+@media only screen and (min-width:940px) {
+	.socials-header {
+		float:left;
+
+	}
+}
+.social {
+	height:20px;
+	float:left;
+
+}
+
+.social-last {
+
+}
+
+.social img {}
+
+.social:hover {
+    opacity: 0.5;
+   filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+ul.nav {
+	height:4em;
+	list-style-type:none;
+	float:right;
+
+}
+
+li.nav {
+	height:4.6em;
+	display:inline-block;	
+	font-size:0.875em;
+	letter-spacing:0.25em;
+	text-transform:uppercase;
+	font-weight:500;
+	color:#4a4a4a;
+
+}
+
+li.nav:hover {
+	background:white;
+}
+
+.topnav {
+	font-family:'Alegreya';
+	height:4em;
+	display:none;
+	font-size:1em;
+	font-weight:400;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	float:left;
+}
+
+.topnav ul {
+
+}
+
+.topnav li {
+	list-style-type:none;
+	display:inline-block;
+
+	letter-spacing:2px;
+}
+
+.topnav li:hover {
+	text-decoration:underline;
+}
+
+@media only screen and (min-width:840px) {
+	.topnav {
+		display:block;
+	}
+}
