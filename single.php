@@ -33,7 +33,7 @@
 			
 			<div class="singlesingle">
 				<?php the_content(); ?>
-				<?php edit_post_link(); ?>	
+				<?php edit_post_link(); ?>
 			</div>
 			
 			<div class="comments">
