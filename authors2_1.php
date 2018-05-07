@@ -1,6 +1,4 @@
-<div id="blogs" class="blogs-intro">
-	<h5 class="blog-name">Blogs</h5>
-</div>
+<div id="blogs" class="clearboth"><h5 class="blog-name">Blogs</h5></div>
 
 <div class="authors-wrapper">
 	

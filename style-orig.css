@@ -88,7 +88,7 @@ p {
 	font-weight:400;
 }
 
-.page {
+.type-page {
 	padding:1em 1em 2em 1em;
 	text-align:center;
 }
@@ -458,6 +458,11 @@ NEW MENU
     text-decoration: none;
     /* safari hack */
 }
+.menu-btn a:hover {
+    display: inline-block;
+    text-decoration: none;
+    /* safari hack */
+}
 .btn-open:after {
     color: #444;
 	font-family:'Alegreya', serif;
@@ -804,11 +809,10 @@ li.post-categories {
 	overflow:hidden;	
 }
 
-.author-col {
+.author-col, .author-col-alt {
 	width:100%;
 	float:left;
 	background:white;
-
 }
 
 .first {
@@ -838,11 +842,27 @@ li.post-categories {
 	padding:0;
 }
 
+.author-position {
+	text-transform: uppercase;
+	text-align:left;
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #444;
+	margin-bottom: 1em;
+	display: block;
+}
+
 @media only screen and (min-width:580px) {
 	.author-col {
 		width:49%;
 		margin-bottom:1em;
 		min-height:980px;
+	}
+	
+	.author-col-alt {
+		width:49%;
+		margin-bottom:1em;
 	}
 	
 	.author-name {
@@ -906,6 +926,10 @@ li.post-categories {
 	.author-col {
 		width:24.25%;
 		min-height:1010px;
+	}
+	
+	.author-col-alt {
+		width:24.25%;
 	}
 	
 	.first {
@@ -1039,6 +1063,15 @@ li.post-categories {
 	}
 }
 
+.author-bio-alt {
+	display:block;
+	clear:both;
+	font-family:'Alegreya Sans', Helvetica, Arial, sans-serif;
+	line-height:1.5em;
+	font-size:1.125em;
+	min-height:4em;
+	text-align:left;
+}
 
 
 .author-list {
