@@ -12,7 +12,7 @@
 		<div class="centered author-name"><a href="../author/hanna/"><?php the_author_meta( 'display_name', 2 ); ?></a></div>
 		<div class="author-title-thin"></div>
 	</div>
-<?php $loop = new WP_Query( array( 'author' => '2', 'posts_per_page' => '2', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>	
+<?php $loop = new WP_Query( array( 'author' => '2', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>	
 	<article class="auth" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 		<p class="author-meta-data"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> | <?php echo get_the_date(); ?></p>
@@ -31,7 +31,7 @@
 		<div class="centered author-name"><a href="../author/marita/"><?php the_author_meta( 'display_name', 5 ); ?></a></div>
 		<div class="author-title-thin"></div>
 	</div>
-<?php $loop = new WP_Query( array( 'author' => '5', 'posts_per_page' => '2', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php $loop = new WP_Query( array( 'author' => '5', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	<article class="auth" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<p class="author-meta-data"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> | <?php echo get_the_date(); ?></p>
 		<h2 class="author-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -49,7 +49,7 @@
 		<div class="centered author-name"><a href="../author/eleonor/"><?php the_author_meta( 'display_name', 6 ); ?></a></div>
 		<div class="author-title-thin"></div>
 	</div>
-<?php $loop = new WP_Query( array( 'author' => '6', 'posts_per_page' => '2', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php $loop = new WP_Query( array( 'author' => '6', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	<article class="auth" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<p class="author-meta-data"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> | <?php echo get_the_date(); ?></p>
 		<h2 class="author-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -67,7 +67,7 @@
 		<div class="centered author-name"><?php the_author_meta( 'display_name', 4 ); ?></div>
 		<div class="author-title-thin"></div>
 	</div>
-<?php $loop = new WP_Query( array( 'author' => '4', 'posts_per_page' => '2', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php $loop = new WP_Query( array( 'author' => '4', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	<article class="auth" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<p class="author-meta-data"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> | <?php echo get_the_date(); ?></p>
 		<h2 class="author-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
