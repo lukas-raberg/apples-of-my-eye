@@ -220,7 +220,8 @@ h3 {
 }
 
 .single-intro {
-	font-size:1em;
+	font-family:'Alegreya', Times, serif;
+	font-size:1.25em;
 	font-weight:400;
 	padding:1em;
 	text-align:center;
@@ -229,13 +230,13 @@ h3 {
 
 @media only screen and (min-width:480px) {
 	.single-intro {
-		font-size:1.25em;
+		font-size:1.5em;
 	}	
 }
 
 @media only screen and (min-width:768px) {
 	.single-intro {
-		font-size:1.75em;
+		font-size:2em;
 	}	
 }
 
@@ -1137,7 +1138,7 @@ iframe {
 	background:white;
 	padding:0 0 2em 0;
 	float:left;
-z-index:-1;
+	z-index:-1;
 }
 
 .blog-sidebar {
@@ -1228,16 +1229,16 @@ z-index:-1;
 }
 
 .blog-avatar {
-	width:150px;
-	height:150px;
+	width:50%;
+	height:50%;
 	border:0;
-	border-radius:75px;
 	margin:0 auto 2em auto;
 	display:block;
 	object-fit: cover;
 }
 
 .blog-bio {
+	font-family:'Alegreya', Times, serif;	
 	margin:1.25em auto;
 	display:block;
 }
@@ -1754,8 +1755,9 @@ blockquote {
 }
 
 h4 {
+	font-family:'Alegreya', Times, serif;
 	padding:1em 0 0 1em;
-	font-size:1.125em;
+	font-size:1.25em;
 	margin:0;
 	display:inline-block;
 }
@@ -1767,7 +1769,7 @@ h4 {
 	}
 	
 	h4 {
-		font-size:1.5em;
+		font-size:1.75em;
 		padding:0 0 0 1.125em;
 	}
 }
