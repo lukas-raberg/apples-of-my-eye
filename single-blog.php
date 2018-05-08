@@ -9,7 +9,7 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<div class="blog-intro">
-		<h5 class="blog-name"><?php the_author_meta('display_name'); ?></h5>
+		<h5 class="blog-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h5>
 	</div>
 
 <div class="single-blog-wrapper">
@@ -69,10 +69,8 @@
 </div>
 
 <div class="blog-sidebar">
-	
-	<img src="/static/marita.jpg" class="blog-avatar">
-	
-	<?php echo get_avatar('force_default'); ?>
+
+	<?php echo get_wp_user_avatar(); ?>
 
 	<span class="centered author-name"><?php the_author(); ?></span>
 
