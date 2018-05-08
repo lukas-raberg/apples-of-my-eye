@@ -1,6 +1,6 @@
 <div class="hero"></div>
 <div class="clearboth-alt"></div>
-<?php query_posts('cat=19&posts_per_page=1'); ?>
+<?php query_posts('cat=193&posts_per_page=1'); ?>
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 <div class="manifest-wrapper">
 	<h1><?php the_title(); ?></h1>
