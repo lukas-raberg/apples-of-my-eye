@@ -1229,12 +1229,12 @@ iframe {
 }
 
 .blog-avatar {
-	width:50%;
-	height:50%;
+	width:100vw;
+	height:33vh;
 	border:0;
 	margin:0 auto 2em auto;
 	display:block;
-	object-fit: cover;
+	object-fit:cover;
 }
 
 .blog-bio {
