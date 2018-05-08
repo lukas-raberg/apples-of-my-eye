@@ -36,8 +36,12 @@
 			
 			<div class="blog-meta">
 				<div class="blog-meta-tags">
-					<span class="tags">
-						<?php _e( '', 'html5blank' ); the_tags('<span class="bold">Taggat med:</span><br />', '', ''); ?>
+					<div class="meta-micro-pad">
+						<span class="bold tags margin-bottom">Fler inlägg av:</span> <?php the_author_posts_link(); ?>
+					</div>
+
+					<span class="meta-micro-pad tags">
+						<?php _e( '', 'html5blank' ); the_tags('<span class="bold">Taggat med:</span>', '', ''); ?>
 					</span>
 	<div style="height:2em;"></div>
 					<span class="tags">
@@ -50,11 +54,10 @@
 					<?php comments_template(); // Remove if you don't want comments ?>
 				</div>
 			</div>
-			
+
 		</article>
 
 		<?php endwhile; ?>
-
 		<?php else: ?>
 
 		<article>
@@ -64,5 +67,22 @@
 	</section>
 	</main>
 </div>
+
+<div class="blog-sidebar">
+	
+	<img src="/static/marita.jpg" class="blog-avatar">
+	
+	<?php echo get_avatar('force_default'); ?>
+
+	<span class="centered author-name"><?php the_author(); ?></span>
+
+	<span class="blog-bio"><?php the_author_meta ('user_description')?></span>
+	
+	<span class="blog-bio"><a href="<?php esc_url( the_author_meta('user_url')); ?>">Följ på Instagram</a></span>
+
+	<span class="blog-bio"><a href="mailto:<?php esc_url( the_author_meta('user_email')); ?>">	<?php the_author_meta('user_email'); ?></a></span>
+</div>
+
+<div class="clearboth"></div>
 
 <?php get_footer(); ?>
