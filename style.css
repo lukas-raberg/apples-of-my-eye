@@ -1133,25 +1133,45 @@ iframe {
 }
 
 .single-blog-wrapper {
-	width:73%;
-	margin:0 1%;
+	width:98%;
+	margin:1em auto;
 	background:white;
-	padding:0 0 2em 0;
-	float:left;
+	padding:1em;
+	float:none;
 	z-index:-1;
 }
 
 .blog-sidebar {
-	width:24%;
-	margin:0 1% 0 0;
+	width:98%;
+	margin:0 1% 1em 1%;
 	padding:1em;
 	background:white;
 	float:left;
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
 	display:block;
-	top:4em;
-	bottom:620px;
+	top:0;
+	bottom:1em;
+}
+
+@media only screen and (min-width:1023px) {
+	.single-blog-wrapper {
+		width:73%;
+		margin:0 1%;
+		padding:1em 0 2em 0;
+		float:left;
+		z-index:-1;
+	}
+
+	.blog-sidebar {
+		width:24%;
+		margin:0 1% 0 0;
+		padding:1em;
+		float:left;
+	    position: -webkit-sticky;
+	    position: sticky;
+		top:4em;
+		bottom:620px;
+	}
 }
 
 .blog-intro {
@@ -1229,12 +1249,20 @@ iframe {
 }
 
 .blog-avatar {
-	width:100vw;
-	height:33vh;
+	width:100%;
+	height:100%;
 	border:0;
 	margin:0 auto 2em auto;
 	display:block;
 	object-fit:cover;
+}
+
+@media only screen and (min-width:900px) {
+	.blog-avatar {
+		width:100vw;
+		height:33vh;
+		margin:0 auto 2em auto;
+	}
 }
 
 .blog-bio {
@@ -1281,7 +1309,7 @@ iframe {
 
 @media only screen and (min-width:900px) {
 	.blog-single p {
-		padding:0 20% 1em 20%;
+		padding:0 10% 1em 10%;
 		font-size:1.5em;
 	}
 	
@@ -1319,6 +1347,10 @@ iframe {
 @media only screen and (min-width:1024px) {
 	.blog-meta {
 		padding:0 20%;
+	}
+	
+	.blog-single p {
+		padding:0 15% 1em 15%;
 	}
 }
 
@@ -1428,7 +1460,7 @@ iframe {
 	width:98%;
 	margin:1%;
 	background:#444;
-	padding:0 1em 1em 1em;
+	padding:0 2em 1em 2em;
 	text-align:left;
 	position:absolute;
 }
@@ -1485,7 +1517,7 @@ iframe {
 
 @media only screen and (min-width:676px) {
 	.footer {
-		padding:4em;
+		padding:4em 0;
 	}
 	
 	
@@ -1510,7 +1542,11 @@ iframe {
 
 }
 
-
+@media only screen and (min-width:1024px) {
+	.footer {
+		padding:4em 0;
+	}
+}
 
 
 .footer-nav a {

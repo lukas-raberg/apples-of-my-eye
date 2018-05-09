@@ -72,7 +72,7 @@
 
 	<?php echo get_wp_user_avatar(); ?>
 
-	<span class="centered author-name"><?php the_author(); ?></span>
+	<span class="centered author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
 
 	<span class="blog-bio"><?php the_author_meta ('user_description')?></span>
 	
