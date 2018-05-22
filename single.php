@@ -36,6 +36,21 @@
 				<?php edit_post_link(); ?>
 			</div>
 			
+			<div class="singlesingle">
+				<div class="facts">
+					<p class="bold"><?php echo get_post_meta($post->ID, 'fact1', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact2', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact3', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact4', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact5', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact6', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact7', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact8', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact9', true); ?></p>
+					<p><?php echo get_post_meta($post->ID, 'fact10', true); ?></p>					
+				</div>
+			</div>
+			
 			<div class="comments">
 				<div class="meta-micro-pad">
 					<strong>More:</strong> <span class="tags"><?php the_category(', '); ?></span>

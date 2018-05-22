@@ -37,17 +37,16 @@
 			<div class="blog-meta">
 				<div class="blog-meta-tags">
 					<div class="meta-micro-pad">
-						<span class="bold tags margin-bottom">Fler inlägg av:</span> <?php the_author_posts_link(); ?>
+						<span class="bold tags margin-bottom">Fler inlägg av:</span><br /> <?php the_author_posts_link(); ?>
 					</div>
 
-					<span class="meta-micro-pad tags">
-						<?php _e( '', 'html5blank' ); the_tags('<span class="bold">Taggat med:</span>', '', ''); ?>
-					</span>
-	<div style="height:2em;"></div>
-					<span class="tags">
+					<div class="meta-micro-pad tags">
+						<?php _e( '', 'html5blank' ); the_tags('<span class="bold">Taggat med:</span><br />', '', ''); ?>
+					</div>	
+					<div class="meta-micro-pad tags">
 						<span class="bold">Dela med dig:<br /></span>
 						<?php echo do_shortcode("[Sassy_Social_Share]"); ?>
-					</span>
+					</div>
 				</div>
 			
 				<div class="comments-blog">
@@ -69,15 +68,10 @@
 </div>
 
 <div class="blog-sidebar">
-
 	<?php echo get_wp_user_avatar(); ?>
-
-	<span class="centered author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
-
+	<span class="author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
 	<span class="blog-bio"><?php the_author_meta ('user_description')?></span>
-	
 	<span class="blog-bio"><a href="<?php esc_url( the_author_meta('user_url')); ?>">Följ på Instagram</a></span>
-
 	<span class="blog-bio"><a href="mailto:<?php esc_url( the_author_meta('user_email')); ?>">	<?php the_author_meta('user_email'); ?></a></span>
 </div>
 

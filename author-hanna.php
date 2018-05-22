@@ -46,7 +46,6 @@
 	<?php endwhile; ?>
 	<?php else: ?>
 	<?php endif; ?>
-
 	</div>
 	<div class="clearboth"></div>
 <?php get_footer(); ?>

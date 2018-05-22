@@ -578,4 +578,6 @@ function tag_archive_mod( $query ) {
 }
 add_action('pre_get_posts', 'tag_archive_mod');
 
+
+
 ?>
