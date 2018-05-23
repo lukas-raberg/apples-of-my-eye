@@ -1249,7 +1249,7 @@ iframe {
 
 .blog-avatar {
 	width:100%;
-	height:100%;
+	height:30vh;
 	border:0;
 	margin:1em auto;
 	display:block;
@@ -1259,16 +1259,13 @@ iframe {
 
 @media only screen and (min-width:540px) {
 	.blog-avatar {
-		width:50%;
-		height:50%;
 		margin:0 auto 1em auto;
 	}
 }
 
 @media only screen and (min-width:767px) {
 	.blog-avatar {
-		width:25%;
-		height:25%;
+
 		margin:0 1em 0 0;
 		float:left;
 	}
@@ -1276,8 +1273,6 @@ iframe {
 
 @media only screen and (min-width:1023px) {
 	.blog-avatar {
-		width:100vw;
-		height:30vh;
 		margin:0 auto 1em 0;
 		float:none;
 	}
@@ -1290,6 +1285,9 @@ iframe {
 	display:block;
 }
 
+.bio-icon {
+	width:2em;
+}
 
 @media only screen and (min-width:639px) {
 	.blog-intro, .blogs-intro {

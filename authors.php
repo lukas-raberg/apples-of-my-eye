@@ -8,8 +8,8 @@
 
 <div class="author-col first">
 	<div class="author-header"> 
-		<div class="avatar-box"><img class="avatar" src="./static/hanna.jpg" alt="Glad Hanna i blå skjorta, i bakgrund en gråblå vägg."></div>
-		<div class="centered author-name"><a href="../author/hanna/"><?php the_author_meta( 'display_name', 2 ); ?></a></div>
+		<div class="avatar-box"><a href="../author/hanna/"><img class="avatar" src="./static/hanna.jpg" alt="Glad Hanna i blå skjorta, i bakgrund en gråblå vägg."></div>
+		<div class="centered author-name"><?php the_author_meta( 'display_name', 2 ); ?></a></div>
 		<div class="author-title-thin"></div>
 	</div>
 <?php $loop = new WP_Query( array( 'author' => '2', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>	
@@ -27,8 +27,8 @@
 
 <div class="author-col not-last">
 	<div class="author-header"> 
-		<div class="avatar-box"><img class="avatar" src="./static/marita.jpg" alt="Marita i gul blus skrattar framför en rosa vägg."></div>
-		<div class="centered author-name"><a href="../author/marita/"><?php the_author_meta( 'display_name', 5 ); ?></a></div>
+		<div class="avatar-box"><a href="../author/marita/"><img class="avatar" src="./static/marita.jpg" alt="Marita i gul blus skrattar framför en rosa vägg."></div>
+		<div class="centered author-name"><?php the_author_meta( 'display_name', 5 ); ?></a></div>
 		<div class="author-title-thin"></div>
 	</div>
 <?php $loop = new WP_Query( array( 'author' => '5', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -45,8 +45,8 @@
 
 <div class="author-col not-last-alt">
 	<div class="author-header"> 
-		<div class="avatar-box"><img class="avatar" src="./static/eleonor.jpg" alt="Eleonor i ljusblå stickad tröja skrattandes framför en gråblå vägg."></div>
-		<div class="centered author-name"><a href="../author/eleonor/"><?php the_author_meta( 'display_name', 6 ); ?></a></div>
+		<div class="avatar-box"><a href="../author/eleonor/"><img class="avatar" src="./static/eleonor.jpg" alt="Eleonor i ljusblå stickad tröja skrattandes framför en gråblå vägg."></div>
+		<div class="centered author-name"><?php the_author_meta( 'display_name', 6 ); ?></a></div>
 		<div class="author-title-thin"></div>
 	</div>
 <?php $loop = new WP_Query( array( 'author' => '6', 'posts_per_page' => '1', 'post_type' => 'blog', 'category_name' => 'blog', 'ignore_sticky_posts' => 1, 'paged' => $paged ) ); if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>

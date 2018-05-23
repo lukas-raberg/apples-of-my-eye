@@ -71,8 +71,11 @@
 	<?php echo get_wp_user_avatar(); ?>
 	<span class="author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span>
 	<span class="blog-bio"><?php the_author_meta ('user_description')?></span>
-	<span class="blog-bio"><a href="<?php esc_url( the_author_meta('user_url')); ?>">Följ på Instagram</a></span>
-	<span class="blog-bio"><a href="mailto:<?php esc_url( the_author_meta('user_email')); ?>">	<?php the_author_meta('user_email'); ?></a></span>
+	
+	<span class="blog-bio">
+		<a href="<?php esc_url( the_author_meta('user_url')); ?>"><img class="bio-icon" alt="Instagramikon" src="<?php echo get_template_directory_uri(); ?>/img/insta.svg" onerror="this.src='<?php echo get_template_directory_uri(); ?>/img/insta.png'; this.onerror=null;"></a>
+		
+		<a href="mailto:<?php esc_url( the_author_meta('user_email')); ?>"><img class="bio-icon" alt="Apples of my eye: Email" src="<?php echo get_template_directory_uri(); ?>/img/email.svg" onerror="this.src='<?php echo get_template_directory_uri(); ?>/img/email.png'; this.onerror=null;"></a></span>
 </div>
 
 <div class="clearboth"></div>
